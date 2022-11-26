@@ -1,0 +1,292 @@
+/* Universal CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body Content */
+body {
+    font-family: ;
+}
+
+/* Typography */
+h1 {
+    font-size: 50px;
+}
+
+h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {}
+
+.btn {
+    border-radius: 0;
+}
+
+section {
+    padding: 60px 0;
+}
+
+/* End Typography */
+
+
+header {
+    height: 100px;
+}
+
+.header-top {
+    background-color: #003d5d;
+}
+
+.navbar-nav .nav-link {
+    color: #fff !important;
+    font-size: 20px;
+    padding: 0.5rem 2rem !important;
+}
+
+li.nav-item:last-child .nav-link {
+    color: #333 !important;
+    border-radius: 30px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    background-image: url(../images/Banner.jpg);
+    min-height: 800px;
+    background-attachment: fixed;
+    padding: 100px 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-caption {
+    left: 11%;
+}
+
+.inter-box:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.inter-box:hover .box-hading,
+.inter-box:hover .price {
+    padding-left: 10px;
+    transition: 1s all;
+}
+
+.inter-box:hover .btn {
+    margin-left: 10px;
+    transition: 1s all;
+}
+
+.view-all-btn {
+    margin-top: 35px !important;
+    margin-bottom: 10px
+    color: #003D5D;
+
+}
+
+.chat-icon {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    z-index: 100;
+}
+
+.box-hading {
+    color: #272727;
+}
+
+.price,
+.inter-box {
+    color: #003D5D;
+}
+
+
+
+/* form */
+.form-section {
+    background-image: url(../images/form-background-img.jfif);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.form-section:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(255 255 255 / 90%);
+}
+
+form {
+    padding: 50px 40px 50px 40px;
+}
+
+.form-floating {
+    margin: 20px 0;
+}
+
+.man {
+    width: 80%;
+}
+
+.harry-wilson {
+    font-family: Prata;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #272727;
+    padding: 20px 0;
+}
+
+.harry-description {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: #515151;
+    padding-right: 10%;
+}
+
+.copyright {
+    margin: 20px 0;
+}
+.down-copyright {
+    display: none;
+}
+
+.brand {
+    cursor: pointer;
+}
+
+.form-col {
+    background-color: #003D5D;
+    color: #fff;
+}
+
+.lets-connect {
+    font-family: Prata;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.form-control {
+    color: #212529;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.form-submit {
+    background-color: #003D5D;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.form-submit:hover {
+    color: #fff;
+
+}
+
+/* end form */
+
+
+
+
+
+
+
+
+/* Media Query */
+
+@media (max-width: 1200px) {
+    .navbar-light .navbar-toggler-icon {
+        color: #fff;
+        background-color: #fff;
+    }
+}
+
+@media (max-width: 992px) {
+    .carousel-caption {
+        left: 11%;
+        bottom: -5%;
+    }
+
+    .banner {
+        min-height: 600px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-collapse {
+    background: #333;
+}
+.man {
+    width: 100%;
+}
+.carousel-caption {
+    bottom: 10%;
+}
+.carousel-caption h1{font-size: 36px;}
+
+}
+
+
+@media (max-width: 576px) {
+    .navbar-light .navbar-toggler-icon {
+        color: #fff;
+        background-color: #fff;
+    }
+
+    .carousel-caption {
+        left: 15%;
+    }
+
+    .box-hading,
+    .price,
+    .inter-box {
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    form {
+        padding: 10px 40px 30px 40px;
+    }
+    .view-all-btn {
+    margin-bottom: 22px;
+
+}
+    .copyright{
+        display: none;
+    }
+}
+
+
+/* End Media Query */
